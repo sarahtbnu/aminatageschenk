@@ -60,7 +60,7 @@ body {
 }
 
 .bg-5 {
-  background-image: url("background-5.jpeg");
+  background-image: url("background-5.jpg");
 }
 
 .content {
@@ -160,6 +160,20 @@ p {
   font-style: italic;
   color: #8a5a22;
   margin-top: -10px;
+}
+
+.gift-photo img,
+.gift-gallery img {
+  width: 100%;
+  border-radius: 22px;
+  margin-top: 20px;
+  box-shadow: 0 14px 35px rgba(72, 45, 25, 0.18);
+}
+
+.gift-gallery {
+  display: grid;
+  gap: 16px;
+  margin-top: 22px;
 }
 
 button {
