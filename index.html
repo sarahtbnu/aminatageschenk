@@ -6,108 +6,123 @@
     <title>Für Aminata & Sani</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <main class="gift">
+    <main class="story">
       <section class="slide hero active">
         <div class="overlay"></div>
-        <div class="content hero-content">
-          <p class="eyebrow">Zur Feier eurer Nikkah</p>
+        <div class="content">
+          <p class="small">Zur Feier eurer Nikkah</p>
           <h1>Aminata & Sani</h1>
-          <p class="subtitle">Ein kleines Geschenk von Sarah & Ziria</p>
-          <button class="primary-btn" data-next>Geschenk öffnen 🤍</button>
+          <p>Ein kleines Geschenk von Sarah & Ziria.</p>
+          <button onclick="nextSlide()">Geschenk öffnen 🤍</button>
         </div>
       </section>
 
       <section class="slide">
         <div class="content card">
-          <p class="label">Duʿā</p>
-          <h2>Eine Duʿā für euch</h2>
+          <h2>Eine Duʿā für euch 🤲</h2>
+
           <p>
-            Möge Allah eure Ehe mit Liebe, Barmherzigkeit und Segen erfüllen.
-            Möge Er euch in guten Zeiten dankbar und in Prüfungen standhaft machen.
-            Möge Er euch zusammenführen in dieser Welt und euch im höchsten Paradies wieder vereinen.
-            Āmīn.
+            Zu Beginn eures gemeinsamen Weges möchten wir euch diese wunderschöne
+            Duʿā mitgeben.
           </p>
 
-          <div class="dua-box">
-            <p class="arabic">اللهم بارك لهما وبارك عليهما واجمع بينهما في خير</p>
-            <p class="transliteration">
-              Allahumma bārik lahumā wa bārik ʿalayhimā wa-jmaʿ bainahumā fī khair.
+          <div class="dua">
+            <p class="arabic">
+              بارك الله لك وبارك عليك وجمع بينكما في خير
             </p>
+
+            <p class="trans">
+              Barakallahu laka wa baraka 'alaika wa jama'a bainakuma fi khair.
+            </p>
+
             <p>
-              O Allah, segne beide, lass Deinen Segen auf ihnen ruhen und vereine sie im Guten.
+              Möge Allah dich segnen und Seinen Segen auf dich herabsenden und
+              euch beide im Guten zusammenführen.
             </p>
           </div>
 
-          <button class="secondary-btn" data-next>Weiter</button>
+          <button onclick="nextSlide()">Weiter</button>
         </div>
       </section>
 
       <section class="slide">
         <div class="content card">
-          <p class="label">Euer Geschenk</p>
-          <h2>Ein Stück Freude weitergeben</h2>
+          <h2>Ein Monat Versorgung in eurem Namen 🍲</h2>
+
           <p>
             Zu eurer Nikkah möchten wir ein Stück eurer Freude weitergeben.
           </p>
+
           <p>
             Deshalb wird in eurem Namen eine Familie in Togo einen Monat lang
             mit Mahlzeiten unterstützt.
           </p>
 
+          <p>
+            Möge Allah diese Tat annehmen und sie zu einem Segen für eure Ehe
+            machen. Āmīn.
+          </p>
+
           <div class="photo-placeholder">
-            <span>📷</span>
-            <p>Hier erscheint bald das Foto der Familie aus Togo.</p>
+            Hier erscheint bald das Foto der Familie aus Togo
           </div>
 
-          <button class="secondary-btn" data-next>Weiter</button>
+          <button onclick="nextSlide()">Weiter</button>
         </div>
       </section>
 
       <section class="slide">
-        <div class="content card rose-card">
-          <p class="label">Erinnerung</p>
-          <h2>In liebevoller Erinnerung an Bouchirah</h2>
+        <div class="content card soft">
+          <h2>In liebevoller Erinnerung an Bouchirah ❤️</h2>
+
           <p>
             Manche Menschen bleiben durch ihre Liebe in unseren Herzen.
           </p>
+
           <p>
-            In liebevoller Erinnerung an Bouchirah wird eine weitere Familie in Togo
-            einen Monat lang mit Mahlzeiten unterstützt.
-          </p>
-          <p>
-            Möge Allah ihr vergeben, sich ihrer erbarmen, ihr Grab mit Licht erfüllen
-            und sie in den höchsten Stufen des Paradieses aufnehmen. Āmīn.
+            In liebevoller Erinnerung an Bouchirah wird eine weitere Familie in
+            Togo einen Monat lang mit Mahlzeiten unterstützt.
           </p>
 
-          <button class="secondary-btn" data-next>Abschluss öffnen</button>
+          <p>
+            Möge Allah ihr vergeben, sich ihrer erbarmen, ihr Grab mit Licht
+            erfüllen und sie in den höchsten Stufen des Paradieses aufnehmen.
+            Āmīn.
+          </p>
+
+          <button onclick="nextSlide()">Abschluss öffnen</button>
         </div>
       </section>
 
       <section class="slide">
-        <div class="content card final-card">
-          <p class="label">Zum Abschluss</p>
-          <h2>Ein Geschenk, das Herzen erreicht</h2>
-          <div class="closing-lines">
-            <p>Eine Duʿā.</p>
-            <p>Eine Erinnerung.</p>
-            <p>Zwei Familien.</p>
-            <p>Ein Monat Hoffnung.</p>
-          </div>
+        <div class="content card final">
+          <h2>❤️ Zum Abschluss</h2>
+
+          <p>Manche Geschenke werden ausgepackt und irgendwann vergessen.</p>
+
+          <p>Andere bleiben als Erinnerung im Herzen.</p>
+
           <p>
-            Möge Allah eure Herzen verbinden und euren gemeinsamen Weg mit Frieden,
-            Geduld und Segen erfüllen.
+            Wir freuen uns von Herzen für euch und wünschen euch eine Ehe voller
+            Liebe, Barmherzigkeit und Segen.
           </p>
 
-          <button id="heartButton" class="primary-btn">Eine letzte Überraschung 🤍</button>
-          <p id="finalBlessing" class="final-blessing"></p>
+          <p>
+            Möge Allah euch in allen Lebensphasen begleiten, eure Herzen
+            füreinander öffnen und euer Zuhause mit Frieden erfüllen.
+          </p>
 
-          <div class="signature-block">
-            <p>Mit Liebe</p>
-            <h3>Sarah & Ziria</h3>
+          <p>Āmīn.</p>
+
+          <div class="love-box">
+            🤍 Mit Liebe
+            <br /><br />
+            <strong>Sarah & Ziria</strong>
           </div>
 
-          <button class="small-btn" id="restartButton">Noch einmal ansehen</button>
+          <button onclick="restart()">Noch einmal ansehen</button>
         </div>
       </section>
     </main>
