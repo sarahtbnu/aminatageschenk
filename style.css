@@ -23,45 +23,71 @@ body {
   justify-content: center;
   text-align: center;
   animation: fadeIn 0.8s ease;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .slide.active {
   display: flex;
 }
 
-.hero {
-  background-image: url("background.JPG");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  position: relative;
-}
-
-.overlay {
+.slide::before {
+  content: "";
   position: absolute;
   inset: 0;
+  background: rgba(248, 241, 232, 0.72);
+  backdrop-filter: blur(2px);
+}
+
+.hero::before {
   background: rgba(0, 0, 0, 0.58);
+}
+
+.bg-1 {
+  background-image: url("background-1.jpg");
+}
+
+.bg-2 {
+  background-image: url("background-2.jpg");
+}
+
+.bg-3 {
+  background-image: url("background-3.jpg");
+}
+
+.bg-4 {
+  background-image: url("background-4.jpg");
+}
+
+.bg-5 {
+  background-image: url("background-5.jpg");
 }
 
 .content {
   position: relative;
-  max-width: 700px;
+  max-width: 720px;
   z-index: 1;
 }
 
+.hero-content {
+  color: white;
+}
+
 .card {
-  background: rgba(255, 255, 255, 0.94);
-  padding: 34px;
-  border-radius: 28px;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 42px;
+  border-radius: 32px;
+  box-shadow: 0 22px 55px rgba(72, 45, 25, 0.18);
+  border: 1px solid rgba(184, 134, 59, 0.25);
 }
 
 .soft {
-  background: #fff7f7;
+  background: rgba(255, 247, 247, 0.92);
 }
 
 .final {
-  background: linear-gradient(135deg, #fff7ed, #fef3c7);
+  background: rgba(255, 253, 248, 0.94);
 }
 
 .small {
@@ -79,25 +105,36 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #7c4a2d;
+  font-weight: normal;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+h2::after {
+  content: "♡";
+  display: block;
+  color: #b8863b;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 p {
-  font-size: 1.12rem;
-  line-height: 1.8;
+  font-size: 1.18rem;
+  line-height: 1.9;
 }
 
 .dua {
   background: #fff8ec;
   border: 1px solid #e7c98f;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 22px 0;
+  border-radius: 22px;
+  padding: 22px;
+  margin: 24px 0;
 }
 
 .arabic {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   direction: rtl;
   color: #8a5a22;
   line-height: 2;
@@ -109,7 +146,7 @@ p {
 }
 
 .photo-placeholder {
-  margin: 24px 0;
+  margin: 26px 0;
   padding: 45px 20px;
   border: 2px dashed #d4a373;
   border-radius: 22px;
@@ -130,19 +167,28 @@ p {
 
 button {
   border: none;
-  background: #b8863b;
+  background: linear-gradient(135deg, #b8863b, #d4af62);
   color: white;
-  padding: 14px 26px;
+  padding: 15px 30px;
   border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
-  margin-top: 18px;
-  transition: 0.2s;
+  margin-top: 20px;
+  transition: 0.25s;
+  box-shadow: 0 10px 24px rgba(120, 80, 35, 0.25);
 }
 
 button:hover {
-  transform: scale(1.04);
-  background: #94672f;
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, #94672f, #c79a45);
+}
+
+.sparkle {
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  font-size: 24px;
+  animation: sparkleFade ease forwards;
 }
 
 @keyframes fadeIn {
@@ -154,5 +200,41 @@ button:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes sparkleFade {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(0);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-10px);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.8) translateY(-40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+
+  .arabic {
+    font-size: 1.45rem;
   }
 }
