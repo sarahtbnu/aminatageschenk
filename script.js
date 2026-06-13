@@ -24,7 +24,7 @@ function restart() {
 }
 
 function sparkle() {
-  for (let i = 0; i < 26; i++) {
+  for (let i = 0; i < 22; i++) {
     const star = document.createElement("div");
 
     star.textContent = Math.random() > 0.5 ? "✨" : "🤍";

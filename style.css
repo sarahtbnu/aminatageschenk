@@ -36,12 +36,11 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(248, 241, 232, 0.72);
-  backdrop-filter: blur(2px);
+  background: rgba(248, 241, 232, 0.38);
 }
 
 .hero::before {
-  background: rgba(0, 0, 0, 0.58);
+  background: rgba(0, 0, 0, 0.42);
 }
 
 .bg-1 {
@@ -66,28 +65,25 @@ body {
 
 .content {
   position: relative;
-  max-width: 720px;
+  max-width: 620px;
   z-index: 1;
 }
 
 .hero-content {
   color: white;
+  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.45);
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 42px;
-  border-radius: 32px;
-  box-shadow: 0 22px 55px rgba(72, 45, 25, 0.18);
-  border: 1px solid rgba(184, 134, 59, 0.25);
-}
-
-.soft {
-  background: rgba(255, 247, 247, 0.92);
+  background: rgba(255, 255, 255, 0.66);
+  backdrop-filter: blur(9px);
+  padding: 38px;
+  border-radius: 30px;
+  box-shadow: 0 24px 60px rgba(72, 45, 25, 0.18);
 }
 
 .final {
-  background: rgba(255, 253, 248, 0.94);
+  background: rgba(255, 253, 248, 0.7);
 }
 
 .small {
@@ -105,10 +101,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.35rem;
   color: #7c4a2d;
   font-weight: normal;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   letter-spacing: -1px;
 }
 
@@ -116,25 +112,24 @@ h2::after {
   content: "♡";
   display: block;
   color: #b8863b;
-  font-size: 1.5rem;
-  margin-top: 10px;
+  font-size: 1.4rem;
+  margin-top: 8px;
 }
 
 p {
-  font-size: 1.18rem;
-  line-height: 1.9;
+  font-size: 1.15rem;
+  line-height: 1.85;
 }
 
 .dua {
-  background: #fff8ec;
-  border: 1px solid #e7c98f;
+  background: rgba(255, 248, 236, 0.72);
   border-radius: 22px;
   padding: 22px;
   margin: 24px 0;
 }
 
 .arabic {
-  font-size: 1.9rem;
+  font-size: 1.85rem;
   direction: rtl;
   color: #8a5a22;
   line-height: 2;
@@ -148,21 +143,23 @@ p {
 .photo-placeholder {
   margin: 26px 0;
   padding: 45px 20px;
-  border: 2px dashed #d4a373;
+  border: 1px dashed rgba(124, 74, 45, 0.45);
   border-radius: 22px;
-  background: #fffaf0;
+  background: rgba(255, 250, 240, 0.62);
   color: #7c4a2d;
   font-weight: bold;
 }
 
-.love-box {
+.closing {
   margin-top: 30px;
-  padding: 25px;
-  border-radius: 20px;
-  background: #fff8ec;
-  border: 1px solid #e7c98f;
-  font-size: 1.2rem;
   color: #7c4a2d;
+}
+
+.signature {
+  font-size: 2rem;
+  font-style: italic;
+  color: #8a5a22;
+  margin-top: -10px;
 }
 
 button {
@@ -173,9 +170,9 @@ button {
   border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 18px;
   transition: 0.25s;
-  box-shadow: 0 10px 24px rgba(120, 80, 35, 0.25);
+  box-shadow: 0 10px 24px rgba(120, 80, 35, 0.22);
 }
 
 button:hover {
@@ -224,17 +221,18 @@ button:hover {
   .card {
     padding: 28px 22px;
     border-radius: 24px;
+    background: rgba(255, 255, 255, 0.76);
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   p {
-    font-size: 1.05rem;
+    font-size: 1.04rem;
   }
 
   .arabic {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
   }
 }
