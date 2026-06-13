@@ -36,7 +36,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(248, 241, 232, 0.38);
+  background: rgba(248, 241, 232, 0.12);
 }
 
 .hero::before {
@@ -75,8 +75,8 @@ body {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.66);
-  backdrop-filter: blur(9px);
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(3px);
   padding: 38px;
   border-radius: 30px;
   box-shadow: 0 24px 60px rgba(72, 45, 25, 0.18);
